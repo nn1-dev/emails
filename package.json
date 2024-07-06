@@ -1,0 +1,26 @@
+{
+  "name": "emails",
+  "version": "0.0.19",
+  "private": true,
+  "scripts": {
+    "build": "email build",
+    "dev": "email dev",
+    "export": "email export"
+  },
+  "dependencies": {
+    "@react-email/body": "^0.0.8",
+    "@react-email/container": "^0.0.12",
+    "@react-email/head": "^0.0.9",
+    "@react-email/hr": "^0.0.8",
+    "@react-email/html": "^0.0.8",
+    "@react-email/img": "^0.0.8",
+    "@react-email/render": "^0.0.16",
+    "@react-email/text": "^0.0.8",
+    "react": "^18.2.0",
+    "react-email": "2.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14"
+  }
+}
