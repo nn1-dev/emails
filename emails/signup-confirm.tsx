@@ -13,7 +13,7 @@ interface EmailSignupConfirmProps {
   url: string;
 }
 
-export const EmailFeedback = ({ url }: EmailSignupConfirmProps) => (
+export const EmailSignupConfirm = ({ url }: EmailSignupConfirmProps) => (
   <Html>
     <Head />
     <Body style={style.body}>
@@ -38,14 +38,14 @@ export const EmailFeedback = ({ url }: EmailSignupConfirmProps) => (
   </Html>
 );
 
-EmailFeedback.PreviewProps = {
+EmailSignupConfirm.PreviewProps = {
   url: "#",
 } as EmailSignupConfirmProps;
 
-const renderEmailFeedback = (props: EmailSignupConfirmProps) => ({
-  html: render(<EmailFeedback {...props} />),
-  text: render(<EmailFeedback {...props} />, { plainText: true }),
+const renderEmailSignupConfirm = (props: EmailSignupConfirmProps) => ({
+  html: render(<EmailSignupConfirm {...props} />),
+  text: render(<EmailSignupConfirm {...props} />, { plainText: true }),
 });
 
-export default EmailFeedback;
-export { renderEmailFeedback };
+export default EmailSignupConfirm;
+export { renderEmailSignupConfirm };

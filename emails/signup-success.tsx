@@ -15,7 +15,7 @@ interface EmailSignupSuccessProps {
   where: string;
 }
 
-export const EmailFeedback = ({
+export const EmailSignupSuccess = ({
   what,
   when,
   where,
@@ -57,16 +57,16 @@ export const EmailFeedback = ({
   </Html>
 );
 
-EmailFeedback.PreviewProps = {
+EmailSignupSuccess.PreviewProps = {
   what: '#1: "Boiling Nemo" by PJ Evans and "The Science of Software Engineering" by Junade Ali',
   when: "Wednesday, 27/03/2024, 18:00",
   where: "Vulcan Works, 34-38 Guildhall Rd, Northampton, NN1 1EW",
 } as EmailSignupSuccessProps;
 
-const renderEmailFeedback = (props: EmailSignupSuccessProps) => ({
-  html: render(<EmailFeedback {...props} />),
-  text: render(<EmailFeedback {...props} />, { plainText: true }),
+const renderEmailSignupSuccess = (props: EmailSignupSuccessProps) => ({
+  html: render(<EmailSignupSuccess {...props} />),
+  text: render(<EmailSignupSuccess {...props} />, { plainText: true }),
 });
 
-export default EmailFeedback;
-export { renderEmailFeedback };
+export default EmailSignupSuccess;
+export { renderEmailSignupSuccess };
