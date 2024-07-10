@@ -11,6 +11,9 @@ importers:
       '@react-email/body':
         specifier: ^0.0.8
         version: 0.0.8(react@18.3.1)
+      '@react-email/button':
+        specifier: ^0.0.15
+        version: 0.0.15(react@18.3.1)
       '@react-email/container':
         specifier: ^0.0.12
         version: 0.0.12(react@18.3.1)
@@ -760,6 +763,12 @@ packages:
 
   '@react-email/body@0.0.8':
     resolution: {integrity: sha512-gqdkNYlIaIw0OdpWu8KjIcQSIFvx7t2bZpXVxMMvBS859Ia1+1X3b5RNbjI3S1ZqLddUf7owOHkO4MiXGE+nxg==}
+    peerDependencies:
+      react: ^18.2.0
+
+  '@react-email/button@0.0.15':
+    resolution: {integrity: sha512-9Zi6SO3E8PoHYDfcJTecImiHLyitYWmIRs0HE3Ogra60ZzlWP2EXu+AZqwQnhXuq+9pbgwBWNWxB5YPetNPTNA==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.2.0
 
@@ -2934,6 +2943,10 @@ snapshots:
   '@radix-ui/rect@1.1.0': {}
 
   '@react-email/body@0.0.8(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@react-email/button@0.0.15(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
