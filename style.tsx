@@ -5,15 +5,14 @@ const style = {
       "-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol",
     padding: "56px 28px",
     margin: "0",
+    fontSize: "16px",
+    lineHeight: "28px",
   },
   img: {
     margin: "0 0 56px",
   },
   text: {
     color: "#f8f7ff",
-    fontSize: "16px",
-    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
-    lineHeight: "28px",
     margin: "0 0 28px",
   },
   hr: {
