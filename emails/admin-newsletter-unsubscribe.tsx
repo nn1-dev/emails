@@ -10,11 +10,13 @@ import { render } from "@react-email/render";
 import style from "../style";
 import { Link } from "@react-email/link";
 
-interface EmailAdminNewsletterProps {
+interface EmailAdminNewsletterUnsubscribeProps {
   email: string;
 }
 
-export const EmailAdminNewsletter = ({ email }: EmailAdminNewsletterProps) => (
+export const EmailAdminNewsletterUnsubscribe = ({
+  email,
+}: EmailAdminNewsletterUnsubscribeProps) => (
   <Html>
     <Head />
     <Body style={style.body}>
@@ -39,14 +41,18 @@ export const EmailAdminNewsletter = ({ email }: EmailAdminNewsletterProps) => (
   </Html>
 );
 
-EmailAdminNewsletter.PreviewProps = {
+EmailAdminNewsletterUnsubscribe.PreviewProps = {
   email: "hey@ho.hi",
-} as EmailAdminNewsletterProps;
+} as EmailAdminNewsletterUnsubscribeProps;
 
-const renderEmailAdminNewsletter = (props: EmailAdminNewsletterProps) => ({
-  html: render(<EmailAdminNewsletter {...props} />),
-  text: render(<EmailAdminNewsletter {...props} />, { plainText: true }),
+const renderEmailAdminNewsletterUnsubscribe = (
+  props: EmailAdminNewsletterUnsubscribeProps,
+) => ({
+  html: render(<EmailAdminNewsletterUnsubscribe {...props} />),
+  text: render(<EmailAdminNewsletterUnsubscribe {...props} />, {
+    plainText: true,
+  }),
 });
 
-export default EmailAdminNewsletter;
-export { renderEmailAdminNewsletter };
+export default EmailAdminNewsletterUnsubscribe;
+export { renderEmailAdminNewsletterUnsubscribe };
