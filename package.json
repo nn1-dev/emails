@@ -12,6 +12,7 @@
     "@react-email/button": "^0.0.15",
     "@react-email/container": "^0.0.12",
     "@react-email/head": "^0.0.9",
+    "@react-email/heading": "^0.0.13",
     "@react-email/hr": "^0.0.8",
     "@react-email/html": "^0.0.8",
     "@react-email/img": "^0.0.8",
