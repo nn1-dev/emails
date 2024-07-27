@@ -1,4 +1,5 @@
 import * as React from "react";
+import { render } from "@react-email/render";
 import { Html } from "@react-email/html";
 import { Head } from "@react-email/head";
 import { Body } from "@react-email/body";
@@ -8,8 +9,7 @@ import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
 import { Button } from "@react-email/button";
-import { render } from "@react-email/render";
-import style from "../style";
+import style from "../style.tsx";
 
 interface EmailSignupSuccessProps {
   eventUrl: string;

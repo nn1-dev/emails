@@ -1,4 +1,5 @@
 import * as React from "react";
+import { render } from "@react-email/render";
 import { Html } from "@react-email/html";
 import { Head } from "@react-email/head";
 import { Body } from "@react-email/body";
@@ -8,9 +9,8 @@ import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
 import { Heading } from "@react-email/heading";
-import { render } from "@react-email/render";
-import style from "../style";
 import { Button } from "@react-email/button";
+import style from "../style.tsx";
 
 interface Email_2024_07_24Props {
   unsubscribeUrl: string;

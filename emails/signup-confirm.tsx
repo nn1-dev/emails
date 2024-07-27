@@ -1,4 +1,5 @@
 import * as React from "react";
+import { render } from "@react-email/render";
 import { Html } from "@react-email/html";
 import { Head } from "@react-email/head";
 import { Body } from "@react-email/body";
@@ -7,8 +8,7 @@ import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
 import { Button } from "@react-email/button";
 import { Link } from "@react-email/link";
-import { render } from "@react-email/render";
-import style from "../style";
+import style from "../style.tsx";
 
 interface EmailSignupConfirmProps {
   eventName: string;
