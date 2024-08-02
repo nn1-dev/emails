@@ -6,7 +6,6 @@ import { Body } from "@react-email/body";
 import { Container } from "@react-email/container";
 import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
-import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
 import { Button } from "@react-email/button";
 import style from "../style.tsx";
@@ -16,6 +15,8 @@ interface EmailSignupSuccessProps {
   eventName: string;
   eventDate: string;
   eventLocation: string;
+  eventInviteUrlIcal: string;
+  eventInviteUrlGoogle: string;
 }
 
 export const EmailSignupSuccess = ({
@@ -23,6 +24,8 @@ export const EmailSignupSuccess = ({
   eventName,
   eventDate,
   eventLocation,
+  eventInviteUrlIcal,
+  eventInviteUrlGoogle,
 }: EmailSignupSuccessProps) => (
   <Html>
     <Head />
@@ -50,6 +53,16 @@ export const EmailSignupSuccess = ({
           📍 {eventLocation}
           <br />
           <br />
+          Add it to your calendar:{" "}
+          <Link style={style.link} href={eventInviteUrlIcal}>
+            iCalendar
+          </Link>{" "}
+          or{" "}
+          <Link style={style.link} href={eventInviteUrlGoogle}>
+            Google Calendar
+          </Link>
+          <br />
+          <br />
           If you have issues or questions, please reply to this email, or reach
           out to us on social media channels:{" "}
           <Link style={style.link} href="http://linkedin.com/company/nn1-dev">
@@ -65,8 +78,6 @@ export const EmailSignupSuccess = ({
           </Link>
           .{" "}
         </Text>
-        <Hr style={style.hr} />
-        <Text style={style.text}>Have a good day 👋</Text>
       </Container>
     </Body>
   </Html>
@@ -78,6 +89,8 @@ EmailSignupSuccess.PreviewProps = {
     '#2: "Design Secrets for Developers" by Thomas Reeve and "Type-safe localization of Unsplash.com" by Oliver Ash',
   eventDate: "Wednesday, 27/03/2024, 18:00",
   eventLocation: "Vulcan Works, 34-38 Guildhall Rd, Northampton, NN1 1EW",
+  eventInviteUrlIcal: "#",
+  eventInviteUrlGoogle: "#",
 } as EmailSignupSuccessProps;
 
 const renderEmailSignupSuccess = (props: EmailSignupSuccessProps) => ({
