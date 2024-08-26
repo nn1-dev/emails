@@ -8,7 +8,7 @@ import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
 import { Link } from "@react-email/link";
 import { Button } from "@react-email/button";
-import style from "../style.js";
+import style from "../style";
 
 interface EmailSignupSuccessProps {
   eventUrl: string;

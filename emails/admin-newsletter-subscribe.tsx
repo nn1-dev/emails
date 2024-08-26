@@ -8,7 +8,7 @@ import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
-import style from "../style.js";
+import style from "../style";
 
 interface EmailAdminNewsletterSubscribeProps {
   email: string;
