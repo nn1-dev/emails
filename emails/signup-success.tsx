@@ -93,9 +93,9 @@ EmailSignupSuccess.PreviewProps = {
   eventInviteUrlGoogle: "#",
 } as EmailSignupSuccessProps;
 
-const renderEmailSignupSuccess = (props: EmailSignupSuccessProps) => ({
-  html: render(<EmailSignupSuccess {...props} />),
-  text: render(<EmailSignupSuccess {...props} />, { plainText: true }),
+const renderEmailSignupSuccess = async (props: EmailSignupSuccessProps) => ({
+  html: await render(<EmailSignupSuccess {...props} />),
+  text: await render(<EmailSignupSuccess {...props} />, { plainText: true }),
 });
 
 export default EmailSignupSuccess;

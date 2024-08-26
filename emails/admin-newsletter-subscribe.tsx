@@ -45,11 +45,11 @@ EmailAdminNewsletterSubscribe.PreviewProps = {
   email: "hey@ho.hi",
 } as EmailAdminNewsletterSubscribeProps;
 
-const renderEmailAdminNewsletterSubscribe = (
+const renderEmailAdminNewsletterSubscribe = async (
   props: EmailAdminNewsletterSubscribeProps,
 ) => ({
-  html: render(<EmailAdminNewsletterSubscribe {...props} />),
-  text: render(<EmailAdminNewsletterSubscribe {...props} />, {
+  html: await render(<EmailAdminNewsletterSubscribe {...props} />),
+  text: await render(<EmailAdminNewsletterSubscribe {...props} />, {
     plainText: true,
   }),
 });

@@ -66,9 +66,9 @@ EmailSignupConfirm.PreviewProps = {
   url: "#",
 } as EmailSignupConfirmProps;
 
-const renderEmailSignupConfirm = (props: EmailSignupConfirmProps) => ({
-  html: render(<EmailSignupConfirm {...props} />),
-  text: render(<EmailSignupConfirm {...props} />, { plainText: true }),
+const renderEmailSignupConfirm = async (props: EmailSignupConfirmProps) => ({
+  html: await render(<EmailSignupConfirm {...props} />),
+  text: await render(<EmailSignupConfirm {...props} />, { plainText: true }),
 });
 
 export default EmailSignupConfirm;

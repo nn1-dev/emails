@@ -50,11 +50,13 @@ EmailAdminSignupSuccess.PreviewProps = {
   email: "hey@ho.hi",
 } as EmailAdminSignupSuccessProps;
 
-const renderEmailAdminSignupSuccess = (
+const renderEmailAdminSignupSuccess = async (
   props: EmailAdminSignupSuccessProps,
 ) => ({
-  html: render(<EmailAdminSignupSuccess {...props} />),
-  text: render(<EmailAdminSignupSuccess {...props} />, { plainText: true }),
+  html: await render(<EmailAdminSignupSuccess {...props} />),
+  text: await render(<EmailAdminSignupSuccess {...props} />, {
+    plainText: true,
+  }),
 });
 
 export default EmailAdminSignupSuccess;

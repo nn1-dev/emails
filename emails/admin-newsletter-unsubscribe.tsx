@@ -45,11 +45,11 @@ EmailAdminNewsletterUnsubscribe.PreviewProps = {
   email: "hey@ho.hi",
 } as EmailAdminNewsletterUnsubscribeProps;
 
-const renderEmailAdminNewsletterUnsubscribe = (
+const renderEmailAdminNewsletterUnsubscribe = async (
   props: EmailAdminNewsletterUnsubscribeProps,
 ) => ({
-  html: render(<EmailAdminNewsletterUnsubscribe {...props} />),
-  text: render(<EmailAdminNewsletterUnsubscribe {...props} />, {
+  html: await render(<EmailAdminNewsletterUnsubscribe {...props} />),
+  text: await render(<EmailAdminNewsletterUnsubscribe {...props} />, {
     plainText: true,
   }),
 });
