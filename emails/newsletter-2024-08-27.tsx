@@ -12,11 +12,11 @@ import { Heading } from "@react-email/heading";
 import { Button } from "@react-email/button";
 import style from "../style.tsx";
 
-interface Email_2024_07_24Props {
+interface Email_2024_08_27Props {
   unsubscribeUrl: string;
 }
 
-export const Email_2024_07_24 = ({ unsubscribeUrl }: Email_2024_07_24Props) => (
+export const Email_2024_08_27 = ({ unsubscribeUrl }: Email_2024_08_27Props) => (
   <Html>
     <Head />
     <Body style={style.body}>
@@ -77,14 +77,14 @@ export const Email_2024_07_24 = ({ unsubscribeUrl }: Email_2024_07_24Props) => (
   </Html>
 );
 
-Email_2024_07_24.PreviewProps = {
+Email_2024_08_27.PreviewProps = {
   unsubscribeUrl: "#",
-} as Email_2024_07_24Props;
+} as Email_2024_08_27Props;
 
-const renderEmail_2024_07_24 = async (props: Email_2024_07_24Props) => ({
-  html: await render(<Email_2024_07_24 {...props} />),
-  text: await render(<Email_2024_07_24 {...props} />, { plainText: true }),
+const renderEmail_2024_08_27 = async (props: Email_2024_08_27Props) => ({
+  html: await render(<Email_2024_08_27 {...props} />),
+  text: await render(<Email_2024_08_27 {...props} />, { plainText: true }),
 });
 
-export default Email_2024_07_24;
-export { renderEmail_2024_07_24 };
+export default Email_2024_08_27;
+export { renderEmail_2024_08_27 };
