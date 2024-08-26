@@ -10,7 +10,7 @@ import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
 import { Heading } from "@react-email/heading";
 import { Button } from "@react-email/button";
-import style from "../style";
+import style from "../style.tsx";
 
 interface Email_2024_07_24Props {
   unsubscribeUrl: string;

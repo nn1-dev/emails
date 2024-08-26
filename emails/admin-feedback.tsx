@@ -7,7 +7,7 @@ import { Container } from "@react-email/container";
 import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
-import style from "../style";
+import style from "../style.tsx";
 
 interface EmailAdminFeedbackProps {
   name: string;

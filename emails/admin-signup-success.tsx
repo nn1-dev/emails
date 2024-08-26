@@ -8,7 +8,7 @@ import { Img } from "@react-email/img";
 import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
 import { Link } from "@react-email/link";
-import style from "../style";
+import style from "../style.tsx";
 
 interface EmailAdminSignupSuccessProps {
   name: string;
