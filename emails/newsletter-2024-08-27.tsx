@@ -35,15 +35,17 @@ export const Email_2024_08_27 = ({ unsubscribeUrl }: Email_2024_08_27Props) => (
         <Hr style={style.hr} />
         <Heading style={style.heading}>NN1 Dev Club co-working days</Heading>
         <Text style={style.text}>
+          Catching up with your community on meet-ups is nice. Still, nothing
+          beats a real collaboration, sitting next to each other, discussing the
+          latest tech, solving problems together and learning from each other.
           Thanks to the courtesy of Vulcan Works, we have an excellent
           opportunity to use their co-working space for FREE every last Friday
-          of the month. There is a high probability we will go for lunch
-          together or have a beer afterwards.
+          of the month. Group lunch and beer afterwards? Of course!
           <br />
           <br />
-          The next one is this Friday, 30/08/2024. Just pop in to the Vulcan
-          Works and register at the reception. Lovely girls will point you in
-          the right direction.
+          The next one is this Friday, 30/08/2024. Just come to the Vulcan Works
+          and register at the reception. Lovely girls will point you in the
+          right direction.
         </Text>
         <Hr style={style.hr} />
         <Heading style={style.heading}>NN1 Dev Club #3 meet-up</Heading>
