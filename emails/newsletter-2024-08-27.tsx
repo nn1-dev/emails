@@ -35,7 +35,7 @@ export const Email_2024_08_27 = ({ unsubscribeUrl }: Email_2024_08_27Props) => (
         <Hr style={style.hr} />
         <Heading style={style.heading}>NN1 Dev Club co-working days</Heading>
         <Text style={style.text}>
-          Catching up with your community on meet-ups is nice. Still, nothing
+          Catching up with your community at meet-ups is nice. Still, nothing
           beats a real collaboration, sitting next to each other, discussing the
           latest tech, solving problems together and learning from each other.
           Thanks to the courtesy of Vulcan Works, we have an excellent
