@@ -42,7 +42,10 @@ export const EmailSignupConfirm = ({
         <Text style={style.text}>
           If you have issues or questions, please reply to this email, or reach
           out to us on social media channels:{" "}
-          <Link style={style.link} href="http://linkedin.com/company/nn1-dev">
+          <Link
+            style={style.link}
+            href="https://www.linkedin.com/company/nn1-dev/"
+          >
             LinkedIn
           </Link>
           ,{" "}
