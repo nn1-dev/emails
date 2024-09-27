@@ -11,7 +11,7 @@ import { Link } from "@react-email/link";
 import { Heading } from "@react-email/heading";
 import style from "../style.tsx";
 
-export const Email_2024_09_25 = () => (
+export const Email_2024_09_27 = () => (
   <Html>
     <Head />
     <Body style={style.body}>
@@ -57,10 +57,10 @@ export const Email_2024_09_25 = () => (
   </Html>
 );
 
-const renderEmail_2024_09_25 = async () => ({
-  html: await render(<Email_2024_09_25 />),
-  text: await render(<Email_2024_09_25 />, { plainText: true }),
+const renderEmail_2024_09_27 = async () => ({
+  html: await render(<Email_2024_09_27 />),
+  text: await render(<Email_2024_09_27 />, { plainText: true }),
 });
 
-export default Email_2024_09_25;
-export { renderEmail_2024_09_25 };
+export default Email_2024_09_27;
+export { renderEmail_2024_09_27 };
