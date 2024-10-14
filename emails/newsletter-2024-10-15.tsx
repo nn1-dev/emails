@@ -28,13 +28,13 @@ export const Email_2024_09_24 = ({ unsubscribeUrl }: Email_2024_09_24Props) => (
           style={style.img}
         />
         <Text style={style.text}>
-          The fourth meet-up is coming on Thursday, 28/11/2024. We are stoked
-          about the guest speakers! Tom Keeber will talk about Dunelm's journey
-          from an unwieldy Websphere site managed by a single developer to one
-          of Europe's largest AWS serverless infrastructures. Rob Hough will
-          look into the paradigm shift introduced by LLMs and their potential to
-          enhance the user experience. Great lineup, right?
-          <br />
+          The fourth meet-up is fast approaching. Come and join us on Thursday,
+          the 28th of November. We are stoked about the guest speakers! Tom
+          Keeber will talk about Dunelm's journey from an unwieldy Websphere
+          site managed by a single developer to one of Europe's largest AWS
+          serverless infrastructures. Rob Hough will look into the paradigm
+          shift introduced by LLMs and their potential to enhance the user
+          experience. Great lineup, right? <br />
           <br />
           As always, the event is free, and the tickets are limited to 100.
           Looking retrospectively at our last event, they may sell out quickly.
