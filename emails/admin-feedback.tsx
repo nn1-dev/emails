@@ -10,11 +10,11 @@ import { Hr } from "@react-email/hr";
 import style from "../style.tsx";
 
 interface EmailAdminFeedbackProps {
-  name: string;
-  stack: string;
+  name?: string;
+  stack?: string;
   who: string;
   interval: string;
-  feedback: string;
+  feedback?: string;
 }
 
 export const EmailAdminFeedback = ({
@@ -37,27 +37,27 @@ export const EmailAdminFeedback = ({
         />
         <Text style={style.text}>New feedback ✨</Text>
         <Hr style={style.hr} />
-        {name !== "" && (
+        {name ? (
           <Text style={style.text}>
             <strong>Name:</strong> {name}
           </Text>
-        )}
-        {stack !== "" && (
+        ) : null}
+        {stack ? (
           <Text style={style.text}>
             <strong>Stack:</strong> {stack}
           </Text>
-        )}
+        ) : null}
         <Text style={style.text}>
           <strong>Who:</strong> {who}
         </Text>
         <Text style={style.text}>
           <strong>Interval:</strong> {interval}
         </Text>
-        {feedback !== "" && (
+        {feedback ? (
           <Text style={style.text}>
             <strong>Feedback:</strong> {feedback}
           </Text>
-        )}
+        ) : null}
       </Container>
     </Body>
   </Html>
