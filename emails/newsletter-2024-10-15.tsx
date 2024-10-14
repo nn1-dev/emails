@@ -11,11 +11,11 @@ import { Text } from "@react-email/text";
 import * as React from "react";
 import style from "../style.tsx";
 
-interface Email_2024_09_24Props {
+interface Email_2024_10_15Props {
   unsubscribeUrl: string;
 }
 
-export const Email_2024_09_24 = ({ unsubscribeUrl }: Email_2024_09_24Props) => (
+export const Email_2024_10_15 = ({ unsubscribeUrl }: Email_2024_10_15Props) => (
   <Html>
     <Head />
     <Body style={style.body}>
@@ -68,14 +68,14 @@ export const Email_2024_09_24 = ({ unsubscribeUrl }: Email_2024_09_24Props) => (
   </Html>
 );
 
-Email_2024_09_24.PreviewProps = {
+Email_2024_10_15.PreviewProps = {
   unsubscribeUrl: "#",
-} as Email_2024_09_24Props;
+} as Email_2024_10_15Props;
 
-const renderEmail_2024_09_24 = async (props: Email_2024_09_24Props) => ({
-  html: await render(<Email_2024_09_24 {...props} />),
-  text: await render(<Email_2024_09_24 {...props} />, { plainText: true }),
+const renderEmail_2024_10_15 = async (props: Email_2024_10_15Props) => ({
+  html: await render(<Email_2024_10_15 {...props} />),
+  text: await render(<Email_2024_10_15 {...props} />, { plainText: true }),
 });
 
-export default Email_2024_09_24;
-export { renderEmail_2024_09_24 };
+export default Email_2024_10_15;
+export { renderEmail_2024_10_15 };
