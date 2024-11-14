@@ -37,20 +37,20 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
           >
             register for free now
           </Link>
-          . We also have news to share about future events and communication
-          with our community members. Finally, we have a favour to ask.
+          . We have some news to share about future events and communication
+          with our community members and a small favour to ask.
         </Text>
         <Hr style={style.hr} />
         <Heading style={style.heading}>
           January is all about your side projects
         </Heading>
         <Text style={style.text}>
-          We are planning something different for January’s event. We are not
-          inviting speakers because we want to make this event about you and
-          your side projects. If you have one (we know you do), do not feel shy
-          and prepare a short (5-15 minutes) presentation about it. It is a
-          great opportunity to share with community members what you’re
-          building. Email us at{" "}
+          We are planning something different for January’s event. This time we
+          won’t be inviting speakers, we want to make this event about YOU and
+          your side projects. If you have one (we know you do), don’t be shy,
+          prepare a short (5-15 minutes) presentation. It’s a great opportunity
+          to share with the other community members what you’re building. Email
+          us at{" "}
           <Link href="mailto:club@nn1.dev" style={style.link}>
             club@nn1.dev
           </Link>{" "}
@@ -59,8 +59,8 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
         <Hr style={style.hr} />
         <Heading style={style.heading}>Discord server and socials</Heading>
         <Text style={style.text}>
-          Social media channels are one of the ways to stay in touch with us. We
-          are actively posting on{" "}
+          Social media is one of the ways to stay in touch with us. We are
+          actively posting on{" "}
           <Link href="http://linkedin.com/company/nn1-dev" style={style.link}>
             LinkedIn
           </Link>
@@ -84,12 +84,12 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
             Instagram
           </Link>{" "}
           account, but we have no time to manage it, so please reach out if you
-          want to help.
+          would like to help us!
           <br />
           <br />
-          We now also have a Discord server, and this is a superb place to stay
-          in touch with local geeks, share inspirations and get to know each
-          other better.
+          We now also have a Discord server, and this is a great place to stay
+          in touch with local geeks, share inspirations, and get to know each
+          other a bit better.
           <br />
         </Text>
         <Button href="https://chat.nn1.dev/" style={style.button}>
@@ -98,12 +98,12 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
         <Hr style={style.hr} />
         <Heading style={style.heading}>Help us, help you!</Heading>
         <Text style={style.text}>
-          We are actively looking for regular sponsorship of our events. We
+          We’re actively looking for regular sponsorship for our events. We
           don’t need a lot of money, but your pizza, beers, juice, t-shirts and
           stickers do not come for free. Instead of spending our energy asking
           local companies for help before every single event, we would love to
           find a long-term sponsor and dedicate our energy to making the
-          community stronger. Help, please!
+          community stronger. Please let us know if you can help.
         </Text>
         <Hr style={style.hr} />
         <Text style={style.text}>
