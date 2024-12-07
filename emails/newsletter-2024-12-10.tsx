@@ -29,7 +29,7 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
         />
         <Text style={style.text}>
           Let’s kick 2025 off with something different. We are excited to invite
-          you to an upcoming meet-up where members of our community will present
+          you to our next meet-up where members of our community will present
           the results of their weekend hacks. Due to very limited slots, please
           reach out as soon as possible if you would like to present something.
           We really hope you will like the new format. Registration is, as
