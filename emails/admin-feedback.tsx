@@ -1,13 +1,8 @@
 import * as React from "react";
 import { render } from "@react-email/render";
-import { Html } from "@react-email/html";
-import { Head } from "@react-email/head";
-import { Body } from "@react-email/body";
-import { Container } from "@react-email/container";
-import { Img } from "@react-email/img";
-import { Text } from "@react-email/text";
-import { Hr } from "@react-email/hr";
-import style from "../style.tsx";
+import Layout from "../components/Layout.tsx";
+import Text from "../components/Text.tsx";
+import Hr from "../components/Hr.tsx";
 
 interface EmailAdminFeedbackProps {
   name?: string;
@@ -24,43 +19,31 @@ export const EmailAdminFeedback = ({
   interval,
   feedback,
 }: EmailAdminFeedbackProps) => (
-  <Html>
-    <Head />
-    <Body style={style.body}>
-      <Container style={style.container}>
-        <Img
-          src="https://nn1.dev/logo-email.png"
-          width="119"
-          height="28"
-          alt="NN1 Dev Club Logo"
-          style={style.img}
-        />
-        <Text style={style.text}>New feedback ✨</Text>
-        <Hr style={style.hr} />
-        {name ? (
-          <Text style={style.text}>
-            <strong>Name:</strong> {name}
-          </Text>
-        ) : null}
-        {stack ? (
-          <Text style={style.text}>
-            <strong>Stack:</strong> {stack}
-          </Text>
-        ) : null}
-        <Text style={style.text}>
-          <strong>Who:</strong> {who}
-        </Text>
-        <Text style={style.text}>
-          <strong>Interval:</strong> {interval}
-        </Text>
-        {feedback ? (
-          <Text style={style.text}>
-            <strong>Feedback:</strong> {feedback}
-          </Text>
-        ) : null}
-      </Container>
-    </Body>
-  </Html>
+  <Layout>
+    <Text>New feedback ✨</Text>
+    <Hr />
+    {name ? (
+      <Text>
+        <strong>Name:</strong> {name}
+      </Text>
+    ) : null}
+    {stack ? (
+      <Text>
+        <strong>Stack:</strong> {stack}
+      </Text>
+    ) : null}
+    <Text>
+      <strong>Who:</strong> {who}
+    </Text>
+    <Text>
+      <strong>Interval:</strong> {interval}
+    </Text>
+    {feedback ? (
+      <Text>
+        <strong>Feedback:</strong> {feedback}
+      </Text>
+    ) : null}
+  </Layout>
 );
 
 EmailAdminFeedback.PreviewProps = {

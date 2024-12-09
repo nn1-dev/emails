@@ -1,14 +1,9 @@
 import * as React from "react";
 import { render } from "@react-email/render";
-import { Html } from "@react-email/html";
-import { Head } from "@react-email/head";
-import { Body } from "@react-email/body";
-import { Container } from "@react-email/container";
-import { Img } from "@react-email/img";
-import { Text } from "@react-email/text";
-import { Hr } from "@react-email/hr";
-import { Link } from "@react-email/link";
-import style from "../style.tsx";
+import Layout from "../components/Layout.tsx";
+import Text from "../components/Text.tsx";
+import Hr from "../components/Hr.tsx";
+import Link from "../components/Link.tsx";
 
 interface EmailAdminSignupSuccessProps {
   name: string;
@@ -19,30 +14,15 @@ export const EmailAdminSignupSuccess = ({
   name,
   email,
 }: EmailAdminSignupSuccessProps) => (
-  <Html>
-    <Head />
-    <Body style={style.body}>
-      <Container style={style.container}>
-        <Img
-          src="https://nn1.dev/logo-email.png"
-          width="119"
-          height="28"
-          alt="NN1 Dev Club Logo"
-          style={style.img}
-        />
-        <Text style={style.text}>New signup ✨</Text>
-        <Hr style={style.hr} />
-        <Text style={style.text}>
-          <strong>Name:</strong> {name}
-          <br />
-          <strong>Email:</strong>{" "}
-          <Link href={`mailto:${email}`} style={style.link}>
-            {email}
-          </Link>
-        </Text>
-      </Container>
-    </Body>
-  </Html>
+  <Layout>
+    <Text>New signup ✨</Text>
+    <Hr />
+    <Text>
+      <strong>Name:</strong> {name}
+      <br />
+      <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>
+    </Text>
+  </Layout>
 );
 
 EmailAdminSignupSuccess.PreviewProps = {
