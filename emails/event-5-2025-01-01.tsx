@@ -7,7 +7,7 @@ import Link from "../components/Link.tsx";
 import Heading from "../components/Heading.tsx";
 import Socials from "../components/Socials.tsx";
 
-export const Email_2024_11_27 = () => (
+export const Email = () => (
   <Layout>
     <Text>Lorem ipsum dolor sit amet...</Text>
     <Text>
@@ -41,10 +41,10 @@ export const Email_2024_11_27 = () => (
   </Layout>
 );
 
-const renderEmail_2024_11_27 = async () => ({
-  html: await render(<Email_2024_11_27 />),
-  text: await render(<Email_2024_11_27 />, { plainText: true }),
+const renderEmailEvent_5_2025_01_01 = async () => ({
+  html: await render(<Email />),
+  text: await render(<Email />, { plainText: true }),
 });
 
-export default Email_2024_11_27;
-export { renderEmail_2024_11_27 };
+export default Email;
+export { renderEmailEvent_5_2025_01_01 };
