@@ -23,9 +23,7 @@ export const EmailSignupConfirm = ({
     </Text>
     <Button href={url}>Confirm your email</Button>
 
-    <Text>
-      If you have questions, ping us on social media or reply to this email.
-    </Text>
+    <Text>Questions? Reach out on social media or reply to this email!</Text>
     <Socials />
   </Layout>
 );

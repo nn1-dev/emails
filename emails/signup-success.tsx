@@ -43,9 +43,7 @@ export const EmailSignupSuccess = ({
       or <Link href={eventInviteUrlGoogle}>Google Calendar</Link>
     </Text>
 
-    <Text>
-      If you have questions, ping us on social media or reply to this email.
-    </Text>
+    <Text>Questions? Reach out on social media or reply to this email!</Text>
     <Socials />
   </Layout>
 );
