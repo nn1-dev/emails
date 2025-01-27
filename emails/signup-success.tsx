@@ -7,7 +7,7 @@ import Button from "../components/Button.tsx";
 import Socials from "../components/Socials.tsx";
 
 interface EmailSignupSuccessProps {
-  eventUrl: string;
+  ticketUrl: string;
   eventName: string;
   eventDate: string;
   eventLocation: string;
@@ -16,7 +16,7 @@ interface EmailSignupSuccessProps {
 }
 
 export const EmailSignupSuccess = ({
-  eventUrl,
+  ticketUrl,
   eventName,
   eventDate,
   eventLocation,
@@ -27,9 +27,9 @@ export const EmailSignupSuccess = ({
     <Text>
       Thanks for signing up for the upcoming NN1 Dev Club event,{" "}
       <strong>{eventName}</strong>. We can't wait to see you! Here is handy
-      information about the event.
+      information about the event and a link to your ticket.
     </Text>
-    <Button href={eventUrl}>Events page</Button>
+    <Button href={ticketUrl}>Go to your ticket</Button>
 
     <Text>
       🗓️ {eventDate}
@@ -49,7 +49,7 @@ export const EmailSignupSuccess = ({
 );
 
 EmailSignupSuccess.PreviewProps = {
-  eventUrl: "https://nn1.dev",
+  ticketUrl: "https://nn1.dev",
   eventName:
     '#2: "Design Secrets for Developers" by Thomas Reeve and "Type-safe localization of Unsplash.com" by Oliver Ash',
   eventDate: "Wednesday, 27/03/2024, 18:00",
