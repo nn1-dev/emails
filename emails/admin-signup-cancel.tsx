@@ -5,17 +5,17 @@ import Text from "../components/Text.tsx";
 import Hr from "../components/Hr.tsx";
 import Link from "../components/Link.tsx";
 
-interface EmailAdminSignupSuccessProps {
+interface EmailAdminSignupCancelProps {
   name: string;
   email: string;
 }
 
-export const EmailAdminSignupSuccess = ({
+export const EmailAdminSignupCancel = ({
   name,
   email,
-}: EmailAdminSignupSuccessProps) => (
+}: EmailAdminSignupCancelProps) => (
   <Layout>
-    <Text>New signup 👍</Text>
+    <Text>Ticket cancelled 👎</Text>
     <Hr />
     <Text>
       <strong>Name:</strong> {name}
@@ -25,19 +25,19 @@ export const EmailAdminSignupSuccess = ({
   </Layout>
 );
 
-EmailAdminSignupSuccess.PreviewProps = {
+EmailAdminSignupCancel.PreviewProps = {
   name: "Pawel Grzybek",
   email: "hey@ho.hi",
-} as EmailAdminSignupSuccessProps;
+} as EmailAdminSignupCancelProps;
 
-const renderEmailAdminSignupSuccess = async (
-  props: EmailAdminSignupSuccessProps,
+const renderEmailAdminSignupCancel = async (
+  props: EmailAdminSignupCancelProps,
 ) => ({
-  html: await render(<EmailAdminSignupSuccess {...props} />),
-  text: await render(<EmailAdminSignupSuccess {...props} />, {
+  html: await render(<EmailAdminSignupCancel {...props} />),
+  text: await render(<EmailAdminSignupCancel {...props} />, {
     plainText: true,
   }),
 });
 
-export default EmailAdminSignupSuccess;
-export { renderEmailAdminSignupSuccess };
+export default EmailAdminSignupCancel;
+export { renderEmailAdminSignupCancel };

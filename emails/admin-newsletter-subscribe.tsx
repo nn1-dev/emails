@@ -13,7 +13,7 @@ export const EmailAdminNewsletterSubscribe = ({
   email,
 }: EmailAdminNewsletterSubscribeProps) => (
   <Layout>
-    <Text>Newsletter member subscribed ✨</Text>
+    <Text>Newsletter member subscribed 👍</Text>
     <Hr />
     <Text>
       <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>

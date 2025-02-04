@@ -13,7 +13,7 @@ export const EmailAdminNewsletterUnsubscribe = ({
   email,
 }: EmailAdminNewsletterUnsubscribeProps) => (
   <Layout>
-    <Text>Newsletter member unsubscribed ✨</Text>
+    <Text>Newsletter member unsubscribed 👎</Text>
     <Hr />
     <Text>
       <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>
