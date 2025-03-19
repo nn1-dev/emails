@@ -18,14 +18,21 @@
     "@react-email/html": "^0.0.11",
     "@react-email/img": "^0.0.11",
     "@react-email/link": "^0.0.12",
-    "@react-email/render": "^1.0.3",
+    "@react-email/render": "^1.0.5",
     "@react-email/row": "^0.0.12",
-    "@react-email/text": "^0.0.11",
-    "react": "^18.2.0",
-    "react-email": "3.0.3"
+    "@react-email/text": "^0.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-email": "3.0.7"
   },
   "devDependencies": {
-    "@types/react": "18.3.4",
-    "@types/react-dom": "18.3.0"
+    "@types/react": "19.0.11",
+    "@types/react-dom": "19.0.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
