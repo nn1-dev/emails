@@ -14,7 +14,7 @@ interface EmailProps {
 
 export const Email = ({ unsubscribeUrl }: EmailProps) => (
   <Layout>
-    <Heading>NN1 Dev Club #6 is Coming Next Week!</Heading>
+    <Heading>NN1 Dev Club #6 is coming next week!</Heading>
     <Text>
       We're pumped about the meetup next week! Our superb speakers, Eric and
       Rehan, are ready to share their wisdom about AI agents and first-hand tips
