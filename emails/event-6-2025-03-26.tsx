@@ -20,7 +20,7 @@ export const Email = ({ ticketUrl }: EmailProps) => (
         NN1 Dev Club #6: "Move Fast and Build Things: A Non-Technical Guide to
         AI Agents" by Eric Bye and "Dark Side of the Moon" by Rehan Butt
       </strong>
-      . This is just a handy reminder with mandatory info and a link to your
+      . This is just a friendly reminder with mandatory info and a link to your
       ticket. Please be prepared to present your ticket at the entrance.
     </Text>
     <Text>
