@@ -16,13 +16,15 @@ export const EmailAdminNewsletterUnsubscribe = ({
     <Text>Newsletter member unsubscribed 👎</Text>
     <Hr />
     <Text>
-      <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>
+      <strong>Email:</strong>
+      <br />
+      <Link href={`mailto:${email}`}>{email}</Link>
     </Text>
   </Layout>
 );
 
 EmailAdminNewsletterUnsubscribe.PreviewProps = {
-  email: "hey@ho.hi",
+  email: "club@nn1.dev",
 } as EmailAdminNewsletterUnsubscribeProps;
 
 const renderEmailAdminNewsletterUnsubscribe = async (

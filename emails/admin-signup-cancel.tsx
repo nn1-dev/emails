@@ -18,16 +18,23 @@ export const EmailAdminSignupCancel = ({
     <Text>Ticket cancelled 👎</Text>
     <Hr />
     <Text>
-      <strong>Name:</strong> {name}
+      <strong>
+        Name:
+        <br />
+      </strong>
+      {name}
+    </Text>
+    <Text>
+      <strong>Email:</strong>
       <br />
-      <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>
+      <Link href={`mailto:${email}`}>{email}</Link>
     </Text>
   </Layout>
 );
 
 EmailAdminSignupCancel.PreviewProps = {
   name: "Pawel Grzybek",
-  email: "hey@ho.hi",
+  email: "club@nn1.dev",
 } as EmailAdminSignupCancelProps;
 
 const renderEmailAdminSignupCancel = async (

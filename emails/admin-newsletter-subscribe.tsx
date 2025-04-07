@@ -16,13 +16,15 @@ export const EmailAdminNewsletterSubscribe = ({
     <Text>Newsletter member subscribed 👍</Text>
     <Hr />
     <Text>
-      <strong>Email:</strong> <Link href={`mailto:${email}`}>{email}</Link>
+      <strong>Email:</strong>
+      <br />
+      <Link href={`mailto:${email}`}>{email}</Link>
     </Text>
   </Layout>
 );
 
 EmailAdminNewsletterSubscribe.PreviewProps = {
-  email: "hey@ho.hi",
+  email: "club@nn1.dev",
 } as EmailAdminNewsletterSubscribeProps;
 
 const renderEmailAdminNewsletterSubscribe = async (
