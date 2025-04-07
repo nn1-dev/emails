@@ -14,35 +14,21 @@ interface EmailAdminFeedbackProps {
 
 export const EmailAdminFeedback = ({
   name,
-  stack,
-  who,
-  interval,
   feedback,
 }: EmailAdminFeedbackProps) => (
   <Layout>
     <Text>New feedback ✨</Text>
     <Hr />
-    {name ? (
-      <Text>
-        <strong>Name:</strong> {name}
-      </Text>
-    ) : null}
-    {stack ? (
-      <Text>
-        <strong>Stack:</strong> {stack}
-      </Text>
-    ) : null}
     <Text>
-      <strong>Who:</strong> {who}
+      <strong>Name:</strong>
+      <br />
+      {name ? name : "Anonymous"}
     </Text>
     <Text>
-      <strong>Interval:</strong> {interval}
+      <strong>Feedback:</strong>
+      <br />
+      {feedback}
     </Text>
-    {feedback ? (
-      <Text>
-        <strong>Feedback:</strong> {feedback}
-      </Text>
-    ) : null}
   </Layout>
 );
 
