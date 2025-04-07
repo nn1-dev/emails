@@ -8,7 +8,7 @@ function Socials() {
   return (
     <Row style={{ display: "table-cell", paddingBottom: "26px" }}>
       <Column style={{ paddingRight: "13px" }}>
-        <Link href="http://linkedin.com/company/nn1-dev">
+        <Link href="https://www.linkedin.com/company/nn1-dev">
           <Img
             src="https://nn1.dev/emails/linkedin.png"
             width="39"
