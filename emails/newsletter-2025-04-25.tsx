@@ -37,12 +37,13 @@ export const Email = ({ unsubscribeUrl }: EmailProps) => (
     <Hr />
     <Heading>NN1 Dev Club Open Collective</Heading>
     <Text>
-      We put a lot of time and energy into building this community. We love it,
-      but we've grown tired of constantly searching for event sponsors. Each
-      event costs around £500, and we're now turning to you, our community, for
-      support. Any funds beyond our costs will go directly to local charities.
-      Through Open Collective, you can see exactly how every contribution is
-      used, ensuring complete transparency.
+      We've poured our hearts (and probably too much caffeine) into growing the
+      NN1 Dev Club into the awesome community it is today. But, truth be told,
+      chasing event sponsors has started to feel a bit like herding cats. Each
+      event sets us back about £500, and instead of running around, we'd love to
+      turn to you—our amazing community—for a helping hand. Any extra funds will
+      go to local charities, so it’s a win-win! With Open Collective, you can
+      see exactly where every penny goes, because transparency is how we roll.
     </Text>
     <Button href="https://opencollective.com/nn1-dev">Support us</Button>
     <Hr />
@@ -65,10 +66,10 @@ Email.PreviewProps = {
   unsubscribeUrl: "#",
 } as EmailProps;
 
-const renderEmailNewsletter_2025_04_24 = async (props: EmailProps) => ({
+const renderEmailNewsletter_2025_04_25 = async (props: EmailProps) => ({
   html: await render(<Email {...props} />),
   text: await render(<Email {...props} />, { plainText: true }),
 });
 
 export default Email;
-export { renderEmailNewsletter_2025_04_24 as renderEmailNewsletter_2025_02_03 };
+export { renderEmailNewsletter_2025_04_25 as renderEmailNewsletter_2025_02_03 };
