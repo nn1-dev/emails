@@ -57,4 +57,4 @@ const renderEmailNewsletter_2025_09_23 = async (props: EmailProps) => ({
 });
 
 export default Email;
-export { renderEmailNewsletter_2025_09_23 as renderEmailNewsletter_2025_08_27 };
+export { renderEmailNewsletter_2025_09_23 };
