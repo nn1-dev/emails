@@ -18,17 +18,17 @@
     "@react-email/html": "^0.0.11",
     "@react-email/img": "^0.0.11",
     "@react-email/link": "^0.0.12",
-    "@react-email/render": "^1.2.1",
+    "@react-email/render": "^1.2.3",
     "@react-email/row": "^0.0.12",
     "@react-email/text": "^0.1.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-email": "4.2.8"
+    "react-email": "4.2.11"
   },
   "devDependencies": {
-    "@react-email/preview-server": "4.2.8",
-    "@types/react": "19.1.11",
-    "@types/react-dom": "19.1.8"
+    "@react-email/preview-server": "4.2.11",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
