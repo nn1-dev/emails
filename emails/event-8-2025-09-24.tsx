@@ -55,10 +55,10 @@ Email.PreviewProps = {
   ticketUrl: "https://nn1.dev/events/5/123",
 } as EmailProps;
 
-const renderEmailEvent_7_2025_05_28 = async ({ ticketUrl }: EmailProps) => ({
+const renderEmailEvent_8_2025_09_24 = async ({ ticketUrl }: EmailProps) => ({
   html: await render(<Email ticketUrl={ticketUrl} />),
   text: await render(<Email ticketUrl={ticketUrl} />, { plainText: true }),
 });
 
 export default Email;
-export { renderEmailEvent_7_2025_05_28 };
+export { renderEmailEvent_8_2025_09_24 };
